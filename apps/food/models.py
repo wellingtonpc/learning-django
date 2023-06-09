@@ -8,4 +8,4 @@ class Item(models.Model):
     item_price = models.FloatField(default=0)
 
     def __str__(self):
-        return f'{self.item_name}, {self.item_price}'
+        return f'Name {self.item_name}, $ {self.item_price:.2f}'

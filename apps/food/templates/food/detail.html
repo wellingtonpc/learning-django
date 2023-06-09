@@ -8,16 +8,14 @@
 <body>
     <h1>This is just a template</h1>
 
-    {% if item_list %}
+    {% if item %}
     <ul>
-        {% for item in item_list %}
-            <li>
-                <a href="/food/detail/{{ item.id }}"> {{ item.id }} - {{ item.item_name }} </a> 
-            </li>    
-        
-        {% endfor %}
-    </ul>   
+        <li>
+            {{ item.pk }} - {{ item.item_name }} - {{ item.item_desc }} - {{ item.item_price }}
+        </li>        
+    </ul>
     {% endif %}
+    <a href="/food"> Go back to menu </a> 
 
 </body>
 </html>
