@@ -1,5 +1,6 @@
 
 
 <h1>{{ user.username }}</h1>
+<img src="{{ user.profile.image.url }}" alt="Profile picture">
 
 <a class="btn btn-success" href="{% url 'food:index' %}" role="button">Voltar</a>
