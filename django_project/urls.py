@@ -33,7 +33,6 @@ urlpatterns = [
         template_name='users/logout.html'
     ), name='logout'),
     path('profile/', users_views.profile_page, name='profile'),
-    path('profile/', users_views.profile_page, name='profile'),
 ] 
 
 urlpatterns += [
